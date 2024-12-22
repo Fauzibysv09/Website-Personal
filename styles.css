@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.moving-text {
+    display: inline-block;
+    font-size: 3em;
+    color: #ff4081;
+    animation: move 5s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
